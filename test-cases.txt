@@ -1,0 +1,89 @@
+1.if the user name is empty than error display  is
+"errors":{
+"message": "User validation failed: username: Path `username` (``) is shorter than the minimum allowed length (3)."
+}
+
+2.if username is length lessthan 3 than error display is
+"errors":{
+"message": "User validation failed: username: Path `username` (`sh`) is shorter than the minimum allowed length (3)."
+}
+
+if username length excceds than error
+"errors": {
+        "username": {
+            "message": "Path `username` (`shyamasdfghjkllkjhgfdsaasdfghjklasdfghjklkjhgfdsdfg`) is longer than the maximum allowed length (32)."
+        }
+}
+
+3.mobile number is optional
+
+4.if user give mobile number  with empty or mobile length greather than 15 than error
+"errors":{
+"message": "User validation failed: mobile: Path `mobile` (``) is invalid mobile number."
+}
+
+5.if email is empty than error
+user validation failed
+"errors": {
+        "email": {
+            "message": "invalid email fromat"
+            }
+}
+
+6.if email is given by user but wrong format than error 
+user validation failed
+"errors": {
+        "email": {
+            "message": "invalid email fromat"
+            }
+}
+
+7.if the email length excceds than error
+errors": {
+        "email": {
+            "message": "Path `email` (`aassdfghjksdfghasdfasddasdfghjklasdfhgjhksdfghjssdgfhjsdfghasdfghjk@g.com`) is longer than the maximum allowed length (64)."
+        }
+}
+
+8.if the password is empty than error
+"errors": {
+        "password": {
+            "message": "Path `password` (``) is shorter than the minimum allowed length (8)."
+        }
+}
+ 9.if password is lessthan minimum length than error
+ "errors": {
+        "password": {
+            "message": "Path `password` (``) is shorter than the minimum allowed length (8)."
+        }
+}
+
+10. if user give email as same as privious email than error 
+{
+    "driver": true,
+    "name": "MongoError",
+    "index": 0,
+    "code": 11000,
+    "errmsg": "E11000 duplicate key error collection: dgiapt.users index: email_1 dup key: { : \"shyamkumar97@live.com\" }"
+}
+
+11. if password has no number than error
+"errors": {
+        "password": {
+            "message": "password atleast one number"
+        }
+}
+
+12.if date of birth is string than error
+"errors": {
+        "DOB": {
+            "message": "Cast to Date failed for value \"sdas\" at path \"DOB\""
+        }
+}
+
+13.if date fromat is invalid than error
+"errors": {
+        "DOB": {
+            "message": "invalid date fromat",
+        }
+}
